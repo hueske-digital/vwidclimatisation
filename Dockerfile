@@ -1,5 +1,5 @@
 # Verwenden Sie ein offizielles Python-Runtime-Image als Basis
-FROM python:3.8-slim
+FROM python:3-slim
 
 # Setzen Sie das Arbeitsverzeichnis im Container
 WORKDIR /app
