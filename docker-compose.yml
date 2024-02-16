@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   app:
-    image: registry.gitlab.com/hueske-digital/services/vw-climatecontrol:latest
+    image: ghcr.io/hueske-digital/vwidclimatisation:latest
     restart: unless-stopped
     env_file:
       - .env
