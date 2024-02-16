@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  app:
+    image: registry.gitlab.com/hueske-digital/services/vw-climatecontrol:latest
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      proxy_apps:
+
+networks:
+  proxy_apps:
+    name: proxy_apps
+    external: true
