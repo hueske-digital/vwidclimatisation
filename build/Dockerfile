@@ -1,15 +1,15 @@
-# Verwenden Sie ein offizielles Python-Runtime-Image als Basis
+# Nutze das offizielle Python-Image als Basis
 FROM python:3-slim
 
 # Setzen Sie das Arbeitsverzeichnis im Container
 WORKDIR /app
 
-# Kopieren Sie die Abhängigkeiten und installieren Sie diese
+# Installation der Abhängigkeiten
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Kopieren Sie den Rest des Anwendungs-Codes
+# Anwendung ins Arbeitsverzeichnis kopieren
 COPY app.py .
 
-# Starten Sie die Anwendung
+# Starten der Anwendung
 CMD ["python", "./app.py"]
