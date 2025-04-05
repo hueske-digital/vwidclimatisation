@@ -1,2 +1,4 @@
 flask
-weconnect-cli
+carconnectivity
+carconnectivity-cli
+carconnectivity-connector-volkswagen
