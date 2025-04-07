@@ -82,6 +82,3 @@ def stop_climatization():
     if output is not None:
         return jsonify({"status": "stopping", "output": output})
     return jsonify({"error": "Fehler beim Stoppen der Klimatisierung"}), 500
-
-if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0')
