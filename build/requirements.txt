@@ -2,3 +2,4 @@ flask
 carconnectivity
 carconnectivity-cli
 carconnectivity-connector-volkswagen
+gunicorn

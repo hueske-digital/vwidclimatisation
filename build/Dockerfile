@@ -16,4 +16,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py .
 
 # Starten der Anwendung
-CMD ["python", "./app.py"]
+CMD ["gunicorn", "-w", "1", "app:app"]
